@@ -5,14 +5,14 @@ public class MyClassA
 	int a = 2;
 	int b = 4;
 	
-	public float C0
+	public int C0
 	{
 		get { a *= b; return a; }
 	}
 	
 	
 	
-	public float C1
+	public int C1
 	{
 		get { return a+b; }
 	}
