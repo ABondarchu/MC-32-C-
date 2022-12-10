@@ -1,31 +1,26 @@
 using System;
 				
-public class MyClassA
-{
-	int a = 2;
-	int b = 4;
+public class MyClassA{
+	float a = 9.4F;
+	float b = 7.3F;
 	
-	public int C0
-	{
-		get { a *= b; return a; }
+		public float C1{
+		get { return a*b; }
 	}
 	
-	
-	
-	public int C1
-	{
-		get { return a+b; }
+		public float C2{
+		get { return ++a; }
 	}
 	
+		public float C3{
+		get { return a/b; }
+	}
 }
 
-
-public class Program
-{
-	public static void Main()
-	{
+public class Program{
+	public static void Main(){
 		MyClassA MyObject = new MyClassA();
-		Console.WriteLine(string.Format("C0 result: {0}\nC1 result: {1}\n", 
-										MyObject.C0, MyObject.C1));
+		Console.WriteLine(string.Format("C1 result: {0}\nC2 result: {1}\nC3 result: {2}\n", 
+										MyObject.C1, MyObject.C2, MyObject.C3));
 	}
 }
